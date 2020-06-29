@@ -1,0 +1,123 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+/* APP */
+body {
+    font-family: 'Roboto';
+}
+
+.container {
+    margin-top: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-control {
+    border: 1px solid black !important;
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.task-group {
+    display: flex;
+}
+
+.btn-add {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+table {
+    flex-grow: 1;
+    border-radius: 5px;
+    margin: 0 10px;
+    color: white !important;
+}
+
+table td {
+    border-top: 0 solid !important;
+}
+
+#tblTarefas {
+    background: #343a40;
+}
+
+#tblTarefasDayToDay {
+    background: #6c757d;
+}
+
+.btn-danger {
+  margin-top: 5px;
+  transform: scale(0.75);
+}
+
+/* ANIMATION */
+
+.up-animation {
+    left: 0;
+    top: 0;
+    z-index: 3;
+    position: absolute;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    animation: animate 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.up-dual-ring {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.up-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: dual-ring 2s linear infinite;
+}
+
+@keyframes dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+        display: block;
+        z-index: 3;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: -1;
+    }
+}

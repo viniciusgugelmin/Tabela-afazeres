@@ -1,4 +1,4 @@
-# Prova Individual - Desenvolvimento Web
-## (2º Bimestre - Universidade Positivo) 
+# Individual Test - Web Development
+## (2nd Bimester - Positivo University)
 
-> Layout de página de lista de afazeres para a matéria de Desenvolvimento Web 1
+> Page layout for a to-do list
